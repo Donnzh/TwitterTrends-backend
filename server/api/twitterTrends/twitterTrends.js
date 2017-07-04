@@ -40,7 +40,7 @@ function getTrendsData (errback) {
 				return;
 			}
 			else {
-				trendsData.push(data);
+				trendsData.push(data[0]);
 				numberflag++;
 				if (numberflag === citiesWoeids.length) {
 					errback(undefined, trendsData);
